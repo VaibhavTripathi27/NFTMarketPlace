@@ -1,19 +1,17 @@
-Copyright 2022 London App Brewery LTD (www.appbrewery.com)
+NFT Marketplace - Motoko & ReactJS
+Overview
+This repository contains the codebase for a decentralized NFT marketplace inspired by OpenSea. The project is implemented using the Motoko programming language for the backend smart contracts on the Dfinity Internet Computer platform, while the frontend is built using ReactJS, HTML, CSS, and Javascript for a seamless user experience.
 
-The code in this tutorial project is licended under the Apache License, Version 2.0 (the "License");
-you may not use this project except in compliance with the License.
-You may obtain a copy of the License at
+Features
+Secure NFT Minting: Users can create and mint their unique NFTs.
+Trading Platform: Facilitates seamless NFT trading and transfers.
+Purchasing: Allows users to buy NFTs with ease and security.
+User Profiles: Personalized profiles for users to manage their NFTs.
 
-    http://www.apache.org/licenses/LICENSE-2.0
+Tech Stack
+Backend: Motoko, Dfinity Internet Computer
+Frontend: ReactJS, HTML, CSS, Javascript
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-Here is the TL;DR version of the above licence:
-https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)
 
 # To Install and Run the Project
 
@@ -40,62 +38,6 @@ dfx deploy --argument='("CryptoDunks #123", principal "qacjr-ih7fy-2vast-aijjo-m
 
 http://localhost:8080/
 
-# Minter Else HTML
-
-```
- <div className="minter-container">
-        <h3 className="Typography-root makeStyles-title-99 Typography-h3 form-Typography-gutterBottom">
-          Minted!
-        </h3>
-        <div className="horizontal-center">
-        </div>
-      </div>
-
-```
-
-# Loader HTML
-
-```
-<div className="lds-ellipsis">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-```
-
-# Button HTML
-
-```
-<div className="Chip-root makeStyles-chipBlue-108 Chip-clickable">
-            <span
-              onClick={}
-              className="form-Chip-label"
-            >
-              Sell
-            </span>
-            </div>
-```
-
-# Price Input HTML
-
-```
-<input
-        placeholder="Price in DANG"
-        type="number"
-        className="price-input"
-        value={}
-        onChange={}
-      />
-```
-
-# Price Label HTML
-
-```
-<div className="disButtonBase-root disChip-root makeStyles-price-23 disChip-outlined">
-          <span className="disChip-label">23 DANG</span>
-        </div>
-```
 
 # Creating NFT for Testing
 
@@ -123,7 +65,7 @@ dfx canister id opend
 dfx canister call wxns6-qiaaa-aaaaa-aaaqa-cai transferOwnership '(principal "ryjl3-tyaaa-aaaaa-aaaba-cai", true)'
 ```
 
-# Conneting to the Token Canister
+# Connecting to the Token Canister
 
 1. Copy over the token declarations folder
 
@@ -132,3 +74,8 @@ dfx canister call wxns6-qiaaa-aaaaa-aaaqa-cai transferOwnership '(principal "ryj
 ```
 const dangPrincipal = Principal.fromText("<REPLACE WITH TOKEN CANISTER ID>");
 ```
+
+Usage
+Browse NFTs listed on the marketplace.
+Mint your own NFTs or trade with others.
+Make secure purchases using FAANG crypto token generator present in another repository.
