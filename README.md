@@ -1,4 +1,5 @@
 NFT Marketplace - Motoko & ReactJS
+
 Overview
 This repository contains the codebase for a decentralized NFT marketplace inspired by OpenSea. The project is implemented using the Motoko programming language for the backend smart contracts on the Dfinity Internet Computer platform, while the frontend is built using ReactJS, HTML, CSS, and Javascript for a seamless user experience.
 
